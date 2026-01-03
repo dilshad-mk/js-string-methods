@@ -1,0 +1,207 @@
+must known string methods interview levelA
+_____________________________
+length
+
+toUpperCase()
+
+toLowerCase()
+
+trim()
+
+split()
+
+slice()
+
+substring()
+
+replace()
+
+replaceAll()
+
+includes()
+
+indexOf()
+
+startsWith()
+
+endsWith()
+
+repeat()
+
+
+
+
+string methods are:-
+
+
+🔹 Remember: Strings are immutable → methods return a new string, they don’t change the original.
+
+🔤 A
+at(index)
+
+Gets character at a specific position (supports negative index).
+
+"Hello".at(1)   // "e"
+"Hello".at(-1)  // "o"
+
+🔤 B
+big()
+
+Displays string in big font (HTML only – rarely used).
+
+"Hello".big()
+
+blink() ❌ (deprecated)
+
+Avoid using.
+
+bold()
+"Hello".bold()
+
+🔤 C
+charAt(index)
+
+Gets character at index.
+
+"Hello".charAt(0) // "H"
+
+charCodeAt(index)
+
+Returns Unicode value.
+
+"ABC".charCodeAt(0) // 65
+
+codePointAt(index)
+
+Handles emojis properly.
+
+"😊".codePointAt(0)
+
+concat()
+
+Joins strings.
+
+"Hi ".concat("Dilshad") // "Hi Dilshad"
+
+🔤 E
+endsWith(value)
+"hello.js".endsWith(".js") // true
+
+🔤 F
+fixed() ❌ deprecated
+fontcolor() ❌ deprecated
+fontsize() ❌ deprecated
+🔤 I
+includes(value)
+"JavaScript".includes("Script") // true
+
+indexOf(value)
+"hello".indexOf("l") // 2
+
+italics()
+"Hello".italics()
+
+🔤 L
+lastIndexOf(value)
+"hello".lastIndexOf("l") // 3
+
+length (property, not method)
+"hello".length // 5
+
+link(url)
+"Google".link("https://google.com")
+
+🔤 L (continued)
+localeCompare(otherString)
+"a".localeCompare("b") // -1
+
+match(regex)
+"abc123".match(/\d+/) // ["123"]
+
+matchAll(regex)
+[..."a1b2".matchAll(/\d/g)]
+
+🔤 N
+normalize()
+
+Used for Unicode normalization.
+
+"é".normalize()
+
+🔤 P
+padEnd(length, value)
+"5".padEnd(3, "0") // "500"
+
+padStart(length, value)
+"5".padStart(3, "0") // "005"
+
+🔤 R
+repeat(count)
+"ha".repeat(3) // "hahaha"
+
+replace(old, new)
+"hi hi".replace("hi", "hello")
+
+replaceAll(old, new)
+"hi hi".replaceAll("hi", "hello")
+
+🔤 S
+search(regex)
+"abc123".search(/\d/) // 3
+
+slice(start, end)
+"hello".slice(1, 4) // "ell"
+
+small()
+"Hello".small()
+
+split(separator)
+"apple,banana".split(",")
+
+startsWith(value)
+"hello".startsWith("he") // true
+
+strike()
+"Hello".strike()
+
+sub()
+"Hello".sub()
+
+substr(start, length) ⚠ deprecated
+"hello".substr(1, 3) // "ell"
+
+substring(start, end)
+"hello".substring(1, 4) // "ell"
+
+sup()
+"Hello".sup()
+
+🔤 T
+toLocaleLowerCase()
+"HELLO".toLocaleLowerCase()
+
+toLocaleUpperCase()
+"hello".toLocaleUpperCase()
+
+toLowerCase()
+"HELLO".toLowerCase()
+
+toUpperCase()
+"hello".toUpperCase()
+
+toString()
+let s = new String("hi");
+s.toString()
+
+trim()
+"  hi  ".trim()
+
+trimStart()
+"  hi".trimStart()
+
+trimEnd()
+"hi  ".trimEnd()
+
+🔤 V
+valueOf()
+"hello".valueOf()

@@ -1,0 +1,262 @@
+🧵 STRING MASTERY ROADMAP (0 → PRO)
+🟢 LEVEL 0 — STRING BASICS (FOUNDATION)
+Understanding & Access
+
+Print each character of a string
+
+Find string length without using .length
+
+Access first, middle, last character
+
+Reverse a string using loop
+
+Reverse a string using built-in methods
+
+Check if string is empty
+
+Copy one string to another
+
+Compare two strings (case-sensitive)
+
+Compare two strings (case-insensitive)
+
+Convert string to array of characters
+
+🟢 LEVEL 1 — CASE & FORMATTING
+
+Convert string to uppercase
+
+Convert string to lowercase
+
+Toggle case of each character
+
+Capitalize first letter
+
+Capitalize first letter of every word
+
+Convert sentence to Title Case
+
+Remove extra spaces from start & end
+
+Remove all spaces from string
+
+Replace spaces with -
+
+Normalize user input (trim + lowercase)
+
+🟡 LEVEL 2 — SEARCHING & MATCHING
+
+Check if string contains a word
+
+Find first occurrence of character
+
+Find last occurrence of character
+
+Count occurrences of a character
+
+Count occurrences of a word
+
+Find all indexes of a character
+
+Check if string starts with specific word
+
+Check if string ends with specific word
+
+Search using regex
+
+Highlight matched word
+
+🟡 LEVEL 3 — SPLIT, JOIN & TRANSFORM
+
+Split string into words
+
+Split string by commas
+
+Convert string to array & back
+
+Reverse words in sentence
+
+Sort words alphabetically
+
+Remove duplicate words
+
+Remove duplicate characters
+
+Find longest word
+
+Find shortest word
+
+Join words with _
+
+🟡 LEVEL 4 — COUNTING & FREQUENCY
+
+Count vowels
+
+Count consonants
+
+Count digits
+
+Count spaces
+
+Count special characters
+
+Frequency of each character
+
+Frequency of each word
+
+Most frequent character
+
+Least frequent character
+
+Character frequency using object
+
+🟠 LEVEL 5 — LOGICAL STRING PROBLEMS
+
+Check palindrome (simple)
+
+Check palindrome (ignore case & spaces)
+
+Check anagram
+
+Check if string has all unique characters
+
+Check if string is rotation of another
+
+Remove a character from string
+
+Remove all occurrences of character
+
+Replace vowels with *
+
+Replace consonants with #
+
+Swap first & last character
+
+🟠 LEVEL 6 — PATTERN & ORDER
+
+Reverse word order
+
+Reverse each word
+
+Move all vowels to end
+
+Move all consonants to start
+
+Sort characters alphabetically
+
+Sort characters by frequency
+
+Extract numbers from string
+
+Extract alphabets from string
+
+Extract special characters
+
+Rebuild string in custom order
+
+🔴 LEVEL 7 — REGEX POWER
+
+Validate email
+
+Validate phone number
+
+Validate strong password
+
+Remove all non-alphanumeric characters
+
+Count words using regex
+
+Replace multiple spaces with single space
+
+Mask email (example: a***@gmail.com)
+
+Mask phone number
+
+Find repeating words
+
+Find longest repeating substring
+
+🔴 LEVEL 8 — REAL-WORLD STRING TASKS
+
+Username validation system
+
+Password strength checker
+
+Slug generator from title
+
+URL parser
+
+Hashtag extractor
+
+Autocomplete suggestion logic
+
+Word censor system
+
+Chat message cleaner
+
+Case-insensitive search engine
+
+Typing speed word counter
+
+⚫ LEVEL 9 — INTERVIEW & PRO LEVEL
+
+First non-repeating character
+
+First repeating character
+
+Longest substring without repetition
+
+Longest palindromic substring
+
+Count substrings in string
+
+Minimum window substring
+
+Check balanced parentheses in string
+
+String compression (aaabb → a3b2)
+
+Decompression (a3b2 → aaabb)
+
+Implement .includes() manually
+
+⚫ LEVEL 10 — THINK LIKE A PRO
+
+Implement .split() manually
+
+Implement .replace() manually
+
+Implement .reverse() manually
+
+Implement .trim() manually
+
+Implement .toUpperCase() manually
+
+Implement .indexOf() manually
+
+Implement .substring() manually
+
+Implement .startsWith() manually
+
+Implement .endsWith() manually
+
+Create your own string utility library
+
+🏆 HOW TO MASTER (VERY IMPORTANT)
+✅ Rules
+
+Solve at least 5 per day
+
+Write solution without copying
+
+First use loops, then methods
+
+Use objects for frequency
+
+Use regex only after Level 6
+
+⏳ Timeline
+
+⏱ 15–20 days → beginner → intermediate
+
+⏱ 30–40 days → professional confidence
