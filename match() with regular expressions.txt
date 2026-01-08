@@ -1,0 +1,211 @@
+match() with regular expressions (regex) is powerful, and I’ll help you master it step-by-step from basics to pro, no skipping.
+
+1️⃣ What is match()?
+
+match() is a string method used to search text using a pattern (regex).
+
+string.match(regex)
+
+
+It returns:
+
+an array → if match found
+
+null → if no match
+
+2️⃣ Basic example (no regex symbols yet)
+let text = "I love JavaScript";
+let result = text.match("JavaScript");
+
+console.log(result);
+
+
+✅ Output:
+
+["JavaScript"]
+
+
+👉 This works like includes, but regex is MUCH more powerful.
+
+3️⃣ Using regex (the real power starts)
+
+Regex is written inside /
+
+let text = "I love JavaScript";
+let result = text.match(/JavaScript/);
+
+console.log(result);
+
+
+Same output, but now you’re using regex.
+
+4️⃣ Case-insensitive match (i flag)
+let text = "I love javascript";
+let result = text.match(/javascript/i);
+
+console.log(result);
+
+
+✅ Matches even though case is different.
+
+📌 i = ignore case
+
+5️⃣ Find multiple matches (g flag)
+let text = "cat dog cat cat dog";
+let result = text.match(/cat/g);
+
+console.log(result);
+
+
+✅ Output:
+
+["cat", "cat", "cat"]
+
+
+📌 g = global (find ALL matches)
+
+6️⃣ g vs no g (IMPORTANT)
+let text = "cat cat cat";
+
+console.log(text.match(/cat/));   // no g
+console.log(text.match(/cat/g));  // with g
+
+Output:
+["cat"]          // only first match
+["cat","cat","cat"] // all matches
+
+
+⚠️ This is a very common interview concept
+
+7️⃣ Match digits (\d)
+let text = "My number is 98765";
+let result = text.match(/\d/g);
+
+console.log(result);
+
+
+✅ Output:
+
+["9","8","7","6","5"]
+
+
+📌 \d = digit (0–9)
+
+8️⃣ Match words (\w)
+let text = "Hi_123!";
+let result = text.match(/\w/g);
+
+console.log(result);
+
+
+✅ Output:
+
+["H","i","_","1","2","3"]
+
+
+📌 \w = letters + digits + _
+
+9️⃣ Match spaces (\s)
+let text = "Hello World JS";
+let result = text.match(/\s/g);
+
+console.log(result);
+
+
+✅ Output:
+
+[" ", " "]
+
+
+📌 \s = space, tab, newline
+
+🔟 Match anything except digits (\D)
+let text = "abc123";
+let result = text.match(/\D/g);
+
+console.log(result);
+
+
+✅ Output:
+
+["a","b","c"]
+
+1️⃣1️⃣ Character sets [ ]
+let text = "bat cat rat mat";
+let result = text.match(/[crm]at/g);
+
+console.log(result);
+
+
+✅ Output:
+
+["cat","rat","mat"]
+
+
+📌 [crm] → c OR r OR m
+
+1️⃣2️⃣ Range [a-z]
+let text = "ABCdef123";
+let result = text.match(/[a-z]/g);
+
+console.log(result);
+
+
+✅ Output:
+
+["d","e","f"]
+
+1️⃣3️⃣ Quantifiers { }
+let text = "My pin is 1234";
+let result = text.match(/\d{4}/);
+
+console.log(result);
+
+
+✅ Matches exactly 4 digits
+
+1️⃣4️⃣ + , * , ?
+let text = "Hellooo";
+
+text.match(/o+/);  // one or more
+text.match(/o*/);  // zero or more
+text.match(/o?/);  // zero or one
+
+
+📌 These control how many times a character repeats
+
+1️⃣5️⃣ Real-world example (Email check)
+let email = "test123@gmail.com";
+let result = email.match(/^[\w.-]+@[\w.-]+\.\w+$/);
+
+console.log(result ? "Valid" : "Invalid");
+
+
+🔥 This is real developer usage
+
+🔥 IMPORTANT RULES TO REMEMBER
+Symbol	Meaning
+i	ignore case
+g	global match
+\d	digit
+\w	word
+\s	space
+^	start
+$	end
+🧠 Practice Task (Level 1 – MUST DO)
+
+Try these and send me your code:
+
+1️⃣ Extract all numbers from:
+
+"Order 45 costs 300 rupees"
+
+
+2️⃣ Count how many times "js" appears in:
+
+"js is fun, js is powerful, JS everywhere"
+
+
+3️⃣ Extract only lowercase letters from:
+
+"ABCdefGHI"

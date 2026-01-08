@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" placeholder="enter sentence or paste it" id="sentence">
+    <input type="text" name="" placeholder="type the word to get heighlited" id="h_word">
+    <textarea name="" id="result"></textarea>
+    <button onclick="match()">get matched</button>
+
+    <script>
+        function match(){
+            let sentence = document.getElementById("sentence").value;
+            let h_word =document.getElementById("h_word").value;
+            let regex = new RegExp(h_word, "gi"); //  dynamic regex
+    let result = "";
+    if(sentence.match(regex))
+  {
+        result="found";
+  }
+  else{
+   result="not found"
+  }
+  document.getElementById("result").value=result;
+        }
+    </script>
+</body>
+</html>
